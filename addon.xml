@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.pacificaradio" name="Pacifica Evening News" version="1.1.5" provider-name="leopheard">
+<addon id="plugin.audio.pacificaradio" name="Pacifica Evening News" version="1.1.7" provider-name="leopheard">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.xbmcswift2" version="2.4.0"/>
@@ -23,12 +23,15 @@
         	<assets>
 			<icon>resources/media/icon.jpg</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
-			<screenshot>resources/media/KPFA.png</screenshot>
-			<screenshot>resources/media/KPFA.jpg</screenshot>
-			<screenshot>resources/media/icon.jpg</screenshot>
-			<screenshot>resources/media/KPFK.jpg</screenshot>
-			<screenshot>resources/media/vault.jpg</screenshot>
-			<screenshot>resources/media/archives.png</screenshot>
+			<screenshot>resources/media/0.jpg</screenshot>
+			<screenshot>resources/media/1.jpg</screenshot>
+			<screenshot>resources/media/2.jpg</screenshot>
+			<screenshot>resources/media/3.jpg</screenshot>
+			<screenshot>resources/media/4.jpg</screenshot>
+			<screenshot>resources/media/5.jpg</screenshot>
+			<screenshot>resources/media/6.jpg</screenshot>
+			<screenshot>resources/media/7.jpg</screenshot>
+			<screenshot>resources/media/8.jpg</screenshot>
 		</assets>
   </extension>
 </addon>
