@@ -23,7 +23,7 @@ def get_soup8(URL8):
     print("type: ", type(soup8))
     return soup8
 
-def get_playable_podcast(soup0):
+def get_playable_podcast0(soup0):
     subjects = []
     for content in soup0.find_all('item'):
         try:        
@@ -94,8 +94,8 @@ def get_playable_podcast7(soup7):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-            thumbnail = content.find('itunes:image')
-            thumbnail = thumbnail.get('href')
+#            thumbnail = content.find('itunes:image')
+#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {

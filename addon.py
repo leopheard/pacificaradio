@@ -4,11 +4,11 @@ from resources.lib import mainaddon
 plugin = Plugin()
 URL0 = "https://kpfa.org/program/the-pacifica-evening-news-weekdays/feed/" #PACIFICA_EVENING_NEWS_WEEKDAY
 URL8 = "https://kpfa.org/program/the-kpfa-evening-news-weekend/feed/" #WEEKEND
-URL1 = "https://streams.kpfa.org:8000/kpfa" #KPFA_BERKELEY #KPFA http://stream.kpfa.org:8000/kpfa.m3u
-URL2 = "https://ic1.sslstream.com/kpfk-fm.mp3" #KPFK
-URL3 = "https://www.wpfwfm.org:8000/wpfw_128" #WPFW_DC
-URL4 = "https://streams.pacifica.org:9000/wbai_128" #WBAI_NY
-URL5 = "https://kpft.org:8000/live_64" #KPFT_HOUSTON
+URL1 = "http://streams.kpfa.org:8000/kpfa" #KPFA_BERKELEY #KPFA http://stream.kpfa.org:8000/kpfa.m3u
+URL2 = "http://ic1.sslstream.com/kpfk-fm.mp3" #KPFK
+URL3 = "http://www.wpfwfm.org:8000/wpfw_128" #WPFW_DC
+URL4 = "http://streams.pacifica.org:9000/wbai_128" #WBAI_NY
+URL5 = "http://kpft.org:8000/live_64" #KPFT_HOUSTON
 URL6 = "https://rss.castbox.fm/everest/b088b9187e4b4295acb3c6be052c1083.xml" #ARCHIVES
 URL7 = "https://fromthevaultradio.org/home/category/uncategorized/feed/" #UNCATEGORIZED
 
@@ -61,7 +61,7 @@ def main_menu():
 
 @plugin.route('/all_episodes0/')
 def all_episodes0():
-    soup0 = mainaddon.get_soup(URL0)
+    soup0 = mainaddon.get_soup0(URL0)
     playable_podcast0 = mainaddon.get_playable_podcast0(soup0)
     items = mainaddon.compile_playable_podcast0(playable_podcast0)
     return items
